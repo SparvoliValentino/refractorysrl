@@ -1,0 +1,313 @@
+import Image from "next/image";
+import heroBannerBackground from "../assets/heroBannerBackground.png";
+import Link from "next/link";
+import paintbrush from "../assets/paintbrush.png";
+export default function Home() {
+  return (
+    <div className="min-h-screen bg-[#F2F2F2]">
+
+      {/* Hero banner */}
+      <div className="relative w-full h-[650px]">
+        {/* Imagen de fondo */}
+        <Image
+          src={heroBannerBackground}
+          alt="Fondo"
+          className="w-full h-full object-cover mask-image"
+          fill
+          priority
+        />
+
+        {/* Capa de opacidad gris */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,#111827_100%)] opacity-70"></div>
+
+
+
+        {/* Texto centrado */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center gap-10">
+          <h1 className="text-white max-w-[1500px] text-[27px] md:text-[64px] font-black text-left">Reparacion y mantenimiento de hornos refractarios industriales</h1>
+          <Link href={"/"} className="text-white text-[36px] font-bold bg-[#E67E22] border-b-6 border-l-6 border-r-6 border-[#B03A2E] text-center flex justify-center items-center w-[450px] h-[100px] rounded-xl">Solicitar asesoramiento</Link>
+        </div>
+      </div>
+
+      {/* Servicios */}
+      <div className="max-w-[1500px] mx-auto mt-10 flex flex-col gap-5">
+        <h2 className="text-[#2C3E50] text-[64px] font-black text-left">Servicios</h2>
+        <p className="text-[#7F8C8D] text-[32px] font-medium text-justify">En Molina Proyectados brindamos soluciones refractarias de alta precision. Contamos con servicios de linea con rapida disponibilidad y tambien servicios complementarios adaptados a tus necesidades.</p>
+        <div className="flex justify-evenly items-center">
+          <div className="w-[700px] h-[620px] shadow-2xl bg-[#FFFF] p-7 flex flex-col gap-8">
+            <h2 className="text-[#2c3e50] text-[32px] text-left font-black">Servicio de linea</h2>
+            {/* Logo uno */}
+            <div className="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-[50px] h-[50px] text-orange-500"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="m14.622 17.897-10.68-2.913" />
+                <path d="M18.376 2.622a1 1 0 1 1 3.002 3.002L17.36 9.643a.5.5 0 0 0 0 .707l.944.944a2.41 2.41 0 0 1 0 3.408l-.944.944a.5.5 0 0 1-.707 0L8.354 7.348a.5.5 0 0 1 0-.707l.944-.944a2.41 2.41 0 0 1 3.408 0l.944.944a.5.5 0 0 0 .707 0z" />
+                <path d="M9 8c-1.804 2.71-3.97 3.46-6.583 3.948a.507.507 0 0 0-.302.819l7.32 8.883a1 1 0 0 0 1.185.204C12.735 20.405 16 16.792 16 15" />
+              </svg>
+              <p className="text-[#7F8C8D] text-[24px] font-medium">
+                Demolición de revestimiento refractario
+              </p>
+            </div>
+
+            {/* Logo dos */}
+            <div className="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-wrench-icon text-orange-500"
+              >
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+              </svg>
+
+              <p className="text-[#7F8C8D] text-[24px] font-medium">
+                Soldaduras de anclas
+              </p>
+            </div>
+
+            {/* Logo tres */}
+            <div className="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-drill-icon text-orange-500"
+              >
+                <path d="M10 18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H5a3 3 0 0 1-3-3 1 1 0 0 1 1-1z" />
+                <path d="M13 10H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1l-.81 3.242a1 1 0 0 1-.97.758H8" />
+                <path d="M14 4h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-3" />
+                <path d="M18 6h4" />
+                <path d="m5 10-2 8" />
+                <path d="m7 18 2-8" />
+              </svg>
+
+
+              <p className="text-[#7F8C8D] text-[24px] font-medium">
+                Gunitado de homringon refractario (Proyeccion neumatica)
+              </p>
+            </div>
+
+            {/* Logo cuatro */}
+            <div className="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-cuboid-icon text-orange-500"
+              >
+                <path d="m21.12 6.4-6.05-4.06a2 2 0 0 0-2.17-.05L2.95 8.41a2 2 0 0 0-.95 1.7v5.82a2 2 0 0 0 .88 1.66l6.05 4.07a2 2 0 0 0 2.17.05l9.95-6.12a2 2 0 0 0 .95-1.7V8.06a2 2 0 0 0-.88-1.66Z" />
+                <path d="M10 22v-8L2.25 9.15" />
+                <path d="m10 14 11.77-6.87" />
+              </svg>
+
+
+              <p className="text-[#7F8C8D] text-[24px] font-medium">
+                Colocado de hormigon refractario
+              </p>
+            </div>
+
+            {/* Logo cinco */}
+            <div className="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-brick-wall-fire-icon text-orange-500"
+              >
+                <path d="M16 3v2.107" />
+                <path d="M17 9c1 3 2.5 3.5 3.5 4.5A5 5 0 0 1 22 17a5 5 0 0 1-10 0c0-.3 0-.6.1-.9a2 2 0 1 0 3.3-2C13 11.5 16 9 17 9" />
+                <path d="M21 8.274V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.938" />
+                <path d="M3 15h5.253" />
+                <path d="M3 9h8.228" />
+                <path d="M8 15v6" />
+                <path d="M8 3v6" />
+              </svg>
+
+
+              <p className="text-[#7F8C8D] text-[24px] font-medium">
+                Instalacion de plasticos refractarios y apisonables
+              </p>
+            </div>
+
+            <p className="text-[24px] font-medium text-[#7F8C8D]"><strong>Rapida</strong> capacidad de respuesta ante la solicitación del servicio de linea</p>
+          </div>
+
+          <div className="w-[700px] h-[620px] shadow-2xl bg-[#FFFF] p-7 flex flex-col gap-10">
+            <h2 className="text-[#2c3e50] text-[32px] text-left font-black">Servicios complementarios</h2>
+            {/* Logo uno */}
+            <div className="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-brick-wall-icon text-orange-500"
+              >
+                <rect width="18" height="18" x="3" y="3" rx="2" />
+                <path d="M12 9v6" />
+                <path d="M16 15v6" />
+                <path d="M16 3v6" />
+                <path d="M3 15h18" />
+                <path d="M3 9h18" />
+                <path d="M8 15v6" />
+                <path d="M8 3v6" />
+              </svg>
+
+              <p className="text-[#7F8C8D] text-[24px] font-medium">
+                Armado y desarmado de andamios
+              </p>
+            </div>
+
+            {/* Logo dos */}
+            <div className="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-hammer-icon text-orange-500"
+              >
+                <path d="m15 12-8.373 8.373a1 1 0 1 1-3-3L12 9" />
+                <path d="m18 15 4-4" />
+                <path d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172V7l-2.26-2.26a6 6 0 0 0-4.202-1.756L9 2.96l.92.82A6.18 6.18 0 0 1 12 8.4V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5" />
+              </svg>
+
+
+              <p className="text-[#7F8C8D] text-[24px] font-medium">
+                Instalacion de ladrillos refractarios
+              </p>
+            </div>
+
+            {/* Logo tres */}
+            <div className="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-hard-hat-icon text-orange-500"
+              >
+                <path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5" />
+                <path d="M14 6a6 6 0 0 1 6 6v3" />
+                <path d="M4 15v-3a6 6 0 0 1 6-6" />
+                <rect x="2" y="15" width="20" height="4" rx="1" />
+              </svg>
+
+              <p className="text-[#7F8C8D] text-[24px] font-medium">
+                Fabricacion de anclajes metalicos
+              </p>
+            </div>
+
+            {/* Logo cuatro */}
+            <div className="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="65"
+                height="65"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-factory-icon text-orange-500"
+              >
+                <path d="M12 16h.01" />
+                <path d="M16 16h.01" />
+                <path d="M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z" />
+                <path d="M8 16h.01" />
+              </svg>
+
+              <p className="text-[#7F8C8D] text-[24px] font-medium">
+                Fabricacion de maquinaria para la instalacion de productos refractarios
+              </p>
+            </div>
+
+            <p className="text-[24px] font-medium text-[#7F8C8D]">Estos servicios se programan con <strong>antelacion</strong> segun las necesidades del cliente.</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Nosotros */}
+      <div className="w-full mt-8">
+        <div className="w-full h-[100px] bg-[#2C3E50]">
+          <div className="max-w-[1500px] mx-auto flex flex-col gap-5">
+            <h2 className="text-[64px] text-[#F2F2F2] font-black">Nosotros</h2>
+          </div>
+        </div>
+        <div className="max-w-[1500px] mx-auto flex flex-col gap-5">
+          <p className="text-[#7F8C8D] text-[32px] font-medium text-justify">Refractory S.R.L. es una empresa especializada en la instalación, reparación y mantenimiento de productos refractarios para la industria. Contamos con una sólida trayectoria en el sector, ofreciendo soluciones técnicas de alta calidad para distintos rubros industriales que requieren resistencia a altas temperaturas y condiciones extremas de operación.</p>
+          <div className="flex justify-evenly items-center">
+            <div className="w-[700px] h-[500px] bg-gray-700 rounded-xl">
+              {/* <Image src={} alt=""/> */}FOTO
+            </div>
+            <div className="bg-[#FF9D46] w-[700px] h-[500px] rounded-xl p-6">
+              <h2 className="text-[64px] text-[#FFFF] font-black text-center">Nuestra mision</h2>
+              <p className="text-[28px] font-semibold text-[#F2F2F2] text-justify">Nuestra misión es brindar un servicio integral que optimice el rendim iento de las instalaciones industriales, minimizando tiempos de parada y garantizando una ejecución eficiente y segura. Nos comprometemos con cada proyecto, acompañando a nuestros clientes desde la planificación hasta la finalización del trabajo, con un enfoque profesional, responsable y orientado a resultados.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      {/* Galeria de trabajo */}
+      <div className="w-full min-h-[3000px] bg-[#2c3e50] mt-6">
+        <div className="max-w-[1500px] mx-auto flex flex-col gap-5">
+          <div className="w-full flex flex-col gap-2">
+            <h2 className="text-[64px] font-black text-[#FFFFFF]">Galeria de trabajo</h2>
+            <div className="w-[500px] h-[20px] bg-[#E67E22] rounded-md"></div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  );
+}
