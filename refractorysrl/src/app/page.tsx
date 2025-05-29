@@ -2,6 +2,31 @@ import Image from "next/image";
 import heroBannerBackground from "../assets/heroBannerBackground.png";
 import Link from "next/link";
 import paintbrush from "../assets/paintbrush.png";
+
+import foto1 from "../assets/foto1.jpeg"
+import foto2 from "../assets/foto2.jpeg"
+import foto3 from "../assets/foto3.jpeg"
+import foto4 from "../assets/foto4.jpeg"
+import foto5 from "../assets/foto5.jpeg"
+import foto6 from "../assets/foto6.jpeg"
+import foto7 from "../assets/foto7.jpeg"
+
+import marca1 from "../assets/marca1.png";
+import marca2 from "../assets/marca2.png";
+import marca3 from "../assets/marca3.png";
+import marca4 from "../assets/marca4.png";
+import marca5 from "../assets/marca5.png";
+import marca6 from "../assets/marca6.png";
+import marca7 from "../assets/marca7.png";
+import marca8 from "../assets/marca8.png";
+import marca9 from "../assets/marca9.png";
+import marca10 from "../assets/marca10.png";
+import marca11 from "../assets/marca11.png";
+import marca12 from "../assets/marca12.png";
+const marcas = [marca1, marca2, marca3, marca4, marca5, marca6, marca7, marca8, marca9, marca10, marca11, marca12];
+
+import bannerContactanos from "../assets/bannerContactos.png";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#F2F2F2]">
@@ -30,7 +55,7 @@ export default function Home() {
       </div>
 
       {/* Servicios */}
-      <div className="max-w-[1500px] mx-auto mt-10 flex flex-col gap-5">
+      <div className="max-w-[1500px] mx-auto mt-10 flex flex-col gap-5" id="servicios">
         <h2 className="text-[#2C3E50] text-[64px] font-black text-left">Servicios</h2>
         <p className="text-[#7F8C8D] text-[32px] font-medium text-justify">En Molina Proyectados brindamos soluciones refractarias de alta precision. Contamos con servicios de linea con rapida disponibilidad y tambien servicios complementarios adaptados a tus necesidades.</p>
         <div className="flex justify-evenly items-center">
@@ -276,7 +301,7 @@ export default function Home() {
       </div>
 
       {/* Nosotros */}
-      <div className="w-full mt-8">
+      <div className="w-full mt-8"  id="nosotros">
         <div className="w-full h-[100px] bg-[#2C3E50]">
           <div className="max-w-[1500px] mx-auto flex flex-col gap-5">
             <h2 className="text-[64px] text-[#F2F2F2] font-black">Nosotros</h2>
@@ -298,15 +323,150 @@ export default function Home() {
       </div>
 
       {/* Galeria de trabajo */}
-      <div className="w-full min-h-[3000px] bg-[#2c3e50] mt-6">
+      <div className="w-full min-h-[1700px] bg-[#2c3e50] mt-6"  id="trabajos">
         <div className="max-w-[1500px] mx-auto flex flex-col gap-5">
           <div className="w-full flex flex-col gap-2">
             <h2 className="text-[64px] font-black text-[#FFFFFF]">Galeria de trabajo</h2>
             <div className="w-[500px] h-[20px] bg-[#E67E22] rounded-md"></div>
           </div>
+          <div className="w-full flex flex-col justify-center items-center gap-7">
+            <div className="w-full flex flex-wrap justify-evenly items-center gap-5">
+              <div className="relative w-[450px] h-[450px] group rounded-xl overflow-hidden">
+                <Image src={foto1} alt="" className="w-full h-full object-cover rounded-xl" />
+                <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl">
+                  <p className="text-white text-2xl font-bold">Trabajo realizado en para</p>
+                </div>
+              </div>
+              <div className="relative w-[450px] h-[450px] group rounded-xl overflow-hidden">
+                <Image src={foto2} alt="" className="w-full h-full object-cover rounded-xl" />
+                <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl">
+                  <p className="text-white text-2xl font-bold">Trabajo realizado en para</p>
+                </div>
+              </div>
+              <div className="relative w-[450px] h-[450px] group rounded-xl overflow-hidden">
+                <Image src={foto3} alt="" className="w-full h-full object-cover rounded-xl" />
+                <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl">
+                  <p className="text-white text-2xl font-bold">Trabajo realizado en para</p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full flex justify-center items-center">
+              <div className="relative w-[1450px] h-[450px] group rounded-xl overflow-hidden">
+                <Image src={foto5} alt="" className="w-full h-full object-cover rounded-xl" />
+                <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl">
+                  <p className="text-white text-2xl font-bold">Trabajo realizado en para</p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full flex flex-wrap justify-evenly items-center gap-5">
+              <div className="relative w-[450px] h-[450px] group rounded-xl overflow-hidden">
+                <Image src={foto4} alt="" className="w-full h-full object-cover rounded-xl" />
+                <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl">
+                  <p className="text-white text-2xl font-bold">Trabajo realizado en para</p>
+                </div>
+              </div>
+              <div className="relative w-[450px] h-[450px] group rounded-xl overflow-hidden">
+                <Image src={foto6} alt="" className="w-full h-full object-cover rounded-xl" />
+                <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl">
+                  <p className="text-white text-2xl font-bold">Trabajo realizado en para</p>
+                </div>
+              </div>
+              <div className="relative w-[450px] h-[450px] group rounded-xl overflow-hidden">
+                <Image src={foto7} alt="" className="w-full h-full object-cover rounded-xl" />
+                <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl">
+                  <p className="text-white text-2xl font-bold">Trabajo realizado en para</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
+      {/* Confia en nosotros */}
+      <div className="w-full bg-[#ffffff] flex flex-col gap-4" id="confian">
+        <h2 className="text-[64px] font-black text-center text-[#2C3E50]">Confian en nosotros</h2>
+        <div className="border-b-4 border-b-[#2C3E50] w-[1500px] mx-auto rounded-2xl"></div>
+        <div className="overflow-hidden w-full bg-white py-8">
+          <div className="flex w-max animate-scroll gap-16">
+            {[...Array(2)].map((_, repeatIndex) => (
+              <div key={repeatIndex} className="flex gap-16">
+                {marcas.map((logo, i) => (
+                  <div key={`${repeatIndex}-${i}`} className="flex-shrink-0 w-[200px] h-[100px] flex items-center justify-center">
+                    <Image src={logo} alt={`Marca ${i + 1}`} width={160} height={80} className="object-contain grayscale hover:grayscale-0 hover:opacity-100 transition" />
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+
+      {/* Contactanos */}
+      <div className="relative w-full h-[950px]">
+        {/* Imagen de fondo */}
+        <Image
+          src={bannerContactanos}
+          alt="Fondo"
+          className="w-full h-full object-cover mask-image"
+          fill
+          priority
+        />
+
+        {/* Capa de opacidad gris */}
+        <div className="absolute inset-0 bg-black opacity-60"></div>
+
+
+
+        {/* Texto centrado */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center"  id="contacto">
+          <div className="w-[90%] max-w-[1500px] flex justify-between items-center gap-8 flex-wrap">
+
+            {/* Sección izquierda: mapa */}
+            <div className="bg-opacity-90 p-4 rounded-lg shadow-lg flex flex-col gap-4">
+              <h2 className="text-[64px] font-black text-[#F2F2F2]">Contactanos</h2>
+              <div className="bg-[#FFFF] w-full h-[5px]"></div>
+              <p className="text-[20px] text-[#F2F2F2] font-extrabold">Envianos tu CV a refractariosMolina@gmail.com</p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d700.749097337662!2d-60.22999229578675!3d-33.335981248270585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b76796c1ac1633%3A0x4176e8a83f91090!2sLe%C3%B3n%20Guruciaga%20596%2C%20B2900%20San%20Nicol%C3%A1s%20de%20Los%20Arroyos%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1748543316829!5m2!1ses!2sar" // reemplazá por tu embed real
+                className="rounded-md w-[700px] h-[350px]"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+
+            {/* Sección derecha: formulario */}
+            <form className="w-[600px] flex flex-col gap-4 mt-40">
+              <div className="flex gap-4">
+                <div className="flex flex-col w-[300px]">
+                  <label htmlFor="" className="text-[20px] font-bold text-white">Nombre</label>
+                  <input type="text" placeholder="Nombre" className="w-full p-2 border rounded bg-[#F8F8F8]" />
+                </div>
+                <div className="flex flex-col w-[300px]">
+                  <label htmlFor="" className="text-[20px] font-bold text-white">Apellido</label>
+                  <input type="text" placeholder="Apellido" className="w-full p-2 border rounded bg-[#F8F8F8]" />
+                </div>
+              </div>
+              <div className="w-full flex flex-col ">
+                <label htmlFor="" className="text-[20px] font-bold text-white">Correo electronico</label>
+                <input type="email" placeholder="Correo electrónico" className="p-2 border rounded w-full bg-[#F8F8F8]" />
+              </div>
+              <div className="w-full flex flex-col ">
+                <label htmlFor="" className="text-[20px] font-bold text-white">Mensaje</label>
+                <textarea placeholder="Mensaje" rows={4} className="p-2 border rounded w-full resize-none bg-[#F8F8F8]" />
+              </div>
+              <button type="submit" className="bg-[#E67E22] text-white font-bold py-3 px-6 rounded hover:brightness-110">
+                Enviá tu consulta
+              </button>
+              <p className="text-white text-[24px] font-bold mt-2">
+                También podés enviarnos a nuestro <span className="font-bold text-green-600">Whatsapp</span>
+              </p>
+            </form>
+
+          </div>
+        </div>
+      </div>
 
     </div>
   );
