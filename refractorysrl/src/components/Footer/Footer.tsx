@@ -2,15 +2,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import logoRefractory from "../../assets/logoRefractory.png"
 
-const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
-
 const Footer = () => {
 
     const generateWhatsAppLink = () => {
-        const encodedMessage = encodeURIComponent('Hola! Quisieras hacerles una consulta!');
-        return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+        const encodedMessage = encodeURIComponent('Hola! Vengo desde la pagina web de Refractory y quisiera hacerles una consulta!');
+        return `https://wa.me/5493364666017?text=${encodedMessage}`;
     };
-
     return (
         <footer className='bg-[#2C3E50] w-full'>
             <div className="mx-auto max-w-[1500px] p-4 py-6 lg:py-8 ">
