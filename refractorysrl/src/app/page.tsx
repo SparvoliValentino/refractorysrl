@@ -312,7 +312,7 @@ export default function Home() {
       {/* Nosotros */}
       <div className="w-full min-h-[1000px] mt-8" id="nosotros">
         <div className="w-full h-[60px] md:h-[100px] bg-[#2C3E50]">
-          <div className="max-w-[1500px] mx-auto flex item-center h-full ml-3 md:ml-0 ">
+          <div className="max-w-[1500px] mx-auto flex items-center h-full px-4">
             <h2 className="text-[30px] md:text-[64px] text-[#F2F2F2] font-black">Nosotros</h2>
           </div>
         </div>
