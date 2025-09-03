@@ -22,7 +22,9 @@ import marca9 from "../assets/marca9.png";
 import marca10 from "../assets/marca10.png";
 import marca11 from "../assets/marca11.png";
 import marca12 from "../assets/marca12.png";
-const marcas = [marca1, marca2, marca3, marca4, marca5, marca6, marca7, marca8, marca9, marca10, marca11, marca12];
+import marca13 from "../assets/marca13.png";
+import marca14 from '../assets/marca14.png'
+const marcas = [marca1, marca2, marca3, marca4, marca5, marca6, marca7, marca8, marca9, marca10, marca11, marca12, marca13, marca14];
 
 import bannerContactanos from "../assets/bannerContactos.png";
 import ContactForm from "@/components/ContactForm/ContactForm";
@@ -66,7 +68,7 @@ export default function Home() {
       {/* Servicios */}
       <div className="max-w-[800px] md:max-w-[1500px] mx-auto mt-10 flex flex-col gap-5" id="servicios">
         <h2 className="text-[#2C3E50] text-[34px] md:text-[64px] font-black text-left p-3">Servicios</h2>
-        <p className="text-[#7F8C8D] text-[20px] md:text-[32px] font-medium text-justify p-3">En Molina Proyectados brindamos soluciones refractarias de alta precision. Contamos con servicios de linea con rapida disponibilidad y tambien servicios complementarios adaptados a tus necesidades.</p>
+        <p className="text-[#7F8C8D] text-[20px] md:text-[32px] font-medium text-justify p-3">En Refractory S.R.L brindamos soluciones refractarias de alta precision. Contamos con servicios de linea con rapida disponibilidad y tambien servicios complementarios adaptados a tus necesidades.</p>
         <div className="flex flex-col md:flex-row justify-evenly items-center gap-5 md:gap-0">
           <div className="w-[350px] md:w-[700px] h-[620px] shadow-2xl bg-[#FFFF] p-3 md:p-7 flex flex-col gap-5 md:gap-8 rounded-md md:rounded-none">
             <h2 className="text-[#2c3e50] text-[32px] text-left font-black">Servicio de linea</h2>
@@ -137,7 +139,7 @@ export default function Home() {
 
 
               <p className="text-[#7F8C8D] text-[20px] md:text-[24px] font-medium">
-                Gunitado de homringon refractario
+                Gunitado de hormigón refractario
               </p>
             </div>
 
