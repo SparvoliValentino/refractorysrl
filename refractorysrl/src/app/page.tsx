@@ -24,7 +24,11 @@ import marca11 from "../assets/marca11.png";
 import marca12 from "../assets/marca12.png";
 import marca13 from "../assets/marca13.png";
 import marca14 from '../assets/marca14.png'
-const marcas = [marca1, marca2, marca3, marca4, marca5, marca6, marca7, marca8, marca9, marca10, marca11, marca12, marca13, marca14];
+import marca15 from '../assets/marca15.png'
+import marca16 from '../assets/marca16.png'
+import marca17 from '../assets/marca17.png'
+import marca18 from '../assets/marca18.png'
+const marcas = [marca1, marca2, marca3, marca4, marca5, marca6, marca7, marca8, marca9, marca10, marca11, marca12, marca13, marca14, marca15, marca16, marca17, marca18];
 
 import bannerContactanos from "../assets/bannerContactos.png";
 import ContactForm from "@/components/ContactForm/ContactForm";
